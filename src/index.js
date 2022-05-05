@@ -4,8 +4,9 @@ import { renderKeys } from './js/renderKeys';
 import enLangKeys from './utils/EnKeysMap';
 import ruLangKeys from './utils/RuKeysMap';
 
+const app = document.querySelector('.app');
 const selectedCase = 'caseDown'; // caseDown, caseUp, shift
-const keysArray = renderKeys(enLangKeys, selectedCase);
+const keysArray = renderKeys(ruLangKeys, selectedCase);
 
 const firstLoading = () => {
   const contentContainer = document.createElement('div');
@@ -14,12 +15,12 @@ const firstLoading = () => {
   const rowArray = [];
   for (let i = 0; i < 5; i++) {
     const row = document.createElement('div');
-    row.classList.add('row');
+    row.classList.add('row', `row-${i + 1}`);
     rowArray.push(row);
   }
 
   const keyboard = document.createElement('div');
-  keyboard.classList.add('keyboard-wrapper');
+  keyboard.classList.add('keyboard');
 
   keysArray.forEach((key, i) => {
     if (i < 14) rowArray[0].append(key);
@@ -29,11 +30,11 @@ const firstLoading = () => {
     if (i >= 55) rowArray[4].append(key);
   });
 
-  const textArea = document.createElement('textarea');
-  textArea.classList.add('textarea');
+  const input = document.createElement('input');
+  input.classList.add('input');
 
   keyboard.append(...rowArray);
-  document.body.append(textArea, keyboard);
+  app.append(input, keyboard);
 };
 
 window.addEventListener('DOMContentLoaded', firstLoading);
