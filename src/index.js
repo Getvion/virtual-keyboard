@@ -6,9 +6,9 @@ import ruLangKeys from './utils/RuKeysMap';
 
 const app = document.querySelector('.app');
 let selectedCase = 'caseDown'; // caseDown, caseUp, shift
-let keysArray = renderKeys(ruLangKeys, selectedCase);
+let selectedLang = ruLangKeys;
 
-const showLayout = () => {
+const showLayout = (keysArray) => {
   const contentContainer = document.createElement('div');
   contentContainer.classList.add('container');
 
@@ -33,16 +33,22 @@ const showLayout = () => {
   const input = document.createElement('input');
   input.classList.add('input');
 
+  app.innerHTML = '';
+
   keyboard.append(...rowArray);
   app.append(input, keyboard);
 };
 
 const changeLang = (e) => {
   if (e.keyCode == 18 && window.event.ctrlKey) {
-    keysArray = renderKeys(enLangKeys, selectedCase);
-    showLayout();
+    selectedLang === ruLangKeys ? (selectedLang = enLangKeys) : (selectedLang = ruLangKeys);
+
+    showLayout(renderKeys(selectedLang, selectedCase));
   }
 };
 
-window.addEventListener('DOMContentLoaded', showLayout);
+window.addEventListener('DOMContentLoaded', () =>
+  showLayout(renderKeys(selectedLang, selectedCase))
+);
+
 window.addEventListener('keydown', changeLang);
