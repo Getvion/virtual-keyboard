@@ -5,10 +5,10 @@ import enLangKeys from './utils/EnKeysMap';
 import ruLangKeys from './utils/RuKeysMap';
 
 const app = document.querySelector('.app');
-const selectedCase = 'caseDown'; // caseDown, caseUp, shift
-const keysArray = renderKeys(ruLangKeys, selectedCase);
+let selectedCase = 'caseDown'; // caseDown, caseUp, shift
+let keysArray = renderKeys(ruLangKeys, selectedCase);
 
-const firstLoading = () => {
+const showLayout = () => {
   const contentContainer = document.createElement('div');
   contentContainer.classList.add('container');
 
@@ -37,4 +37,12 @@ const firstLoading = () => {
   app.append(input, keyboard);
 };
 
-window.addEventListener('DOMContentLoaded', firstLoading);
+const changeLang = (e) => {
+  if (e.keyCode == 18 && window.event.ctrlKey) {
+    keysArray = renderKeys(enLangKeys, selectedCase);
+    showLayout();
+  }
+};
+
+window.addEventListener('DOMContentLoaded', showLayout);
+window.addEventListener('keydown', changeLang);
