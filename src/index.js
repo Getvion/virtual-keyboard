@@ -6,7 +6,9 @@ import ruLangKeys from './utils/RuKeysMap';
 
 const app = document.querySelector('.app');
 let selectedCase = 'caseDown'; // caseDown, caseUp, shift
-let selectedLang = ruLangKeys;
+let selectedLang = localStorage.getItem('selectedLang')
+  ? JSON.parse(localStorage.getItem('selectedLang'))
+  : enLangKeys;
 
 const keyboard = document.createElement('div');
 keyboard.classList.add('keyboard');
@@ -24,6 +26,8 @@ const createDescr = () => {
 };
 
 const createKeyboard = (keysArray) => {
+  localStorage.setItem('selectedLang', JSON.stringify(selectedLang));
+
   const rowArray = [];
   for (let i = 0; i < 5; i++) {
     const row = document.createElement('div');
