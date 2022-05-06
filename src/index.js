@@ -1,5 +1,6 @@
 import './styles/style.scss';
 import { renderKeys } from './js/renderKeys';
+import { createDescr } from './js/createDescr';
 
 import enLangKeys from './utils/EnKeysMap';
 import ruLangKeys from './utils/RuKeysMap';
@@ -9,21 +10,12 @@ let selectedCase = 'caseDown'; // caseDown, caseUp, shift
 let selectedLang = localStorage.getItem('selectedLang')
   ? JSON.parse(localStorage.getItem('selectedLang'))
   : enLangKeys;
+let keysArray = renderKeys(selectedLang, selectedCase);
 
 const keyboard = document.createElement('div');
 keyboard.classList.add('keyboard');
 
-const createDescr = () => {
-  const contentContainer = document.createElement('div');
-  contentContainer.classList.add('container');
-  contentContainer.innerHTML = `
-      <h1 class='title'>Virtual Keyboard</h1>
-      <p class="descr">Разработка велась на Windows, ctrl + alt - смена языка </p>
-      <input class="input">
-    `;
-
-  app.append(contentContainer);
-};
+const clickHandler = () => {};
 
 const createKeyboard = (keysArray) => {
   localStorage.setItem('selectedLang', JSON.stringify(selectedLang));
@@ -47,6 +39,16 @@ const createKeyboard = (keysArray) => {
   app.append(keyboard);
 };
 
+// const pressHandler = (event, keysArray) => {
+//   const input = document.querySelector('.input');
+
+//   keysArray.forEach((key) => {
+//     if (event.key == key.textContent) {
+//       key.classList.add('active');
+//     }
+//   });
+// };
+
 const changeLang = (e) => {
   if (e.keyCode == 18 && window.event.ctrlKey) {
     selectedLang === ruLangKeys ? (selectedLang = enLangKeys) : (selectedLang = ruLangKeys);
@@ -58,6 +60,10 @@ const changeLang = (e) => {
 window.addEventListener('DOMContentLoaded', () => {
   createDescr();
   createKeyboard(renderKeys(selectedLang, selectedCase));
+  clickHandler(renderKeys(selectedLang, selectedCase));
 });
 
-window.addEventListener('keydown', changeLang);
+window.addEventListener('keydown', (event) => {
+  changeLang(event);
+  // pressHandler(event, renderKeys(selectedLang, selectedCase));
+});
