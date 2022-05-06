@@ -12,7 +12,6 @@ export const renderKeys = (keys, selectedCase) => {
       caseDown === 'Shift'
     )
       button.classList.add('key--long');
-    if (caseDown === 'Ctrl') button.classList.add('key--half-long');
     if (caseDown === ' ') button.classList.add('key--very-long');
 
     if (selectedCase === 'caseDown') button.textContent = caseDown;
