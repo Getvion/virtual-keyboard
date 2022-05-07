@@ -1,3 +1,4 @@
+import { createDescr } from './js/createDescr';
 import { generateKeys } from './js/generateKeys';
 import { onKeyClick } from './js/onKeyClick';
 import { onKeyPress } from './js/onKeyPress';
@@ -8,6 +9,8 @@ const keysArr = generateKeys();
 const app = document.querySelector('.app');
 
 const fitrstLoad = () => {
+  createDescr(app);
+
   const row1 = document.createElement('div');
   const row2 = document.createElement('div');
   const row3 = document.createElement('div');
