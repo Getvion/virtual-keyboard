@@ -65,6 +65,8 @@ body {
   &:active,
   &.active {
     border-radius: 50px;
+    color: #333;
+    background-color: #fff;
   }
 }
 

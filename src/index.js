@@ -1,5 +1,6 @@
 import { generateKeys } from './js/generateKeys';
 import { onKeyClick } from './js/onKeyClick';
+import { onKeyPress } from './js/onKeyPress';
 
 import './styles/style.scss';
 
@@ -39,3 +40,4 @@ const fitrstLoad = () => {
 
 window.addEventListener('DOMContentLoaded', fitrstLoad);
 window.addEventListener('keydown', (event) => onKeyPress(event, keysArr));
+window.addEventListener('keyup', (event) => onKeyPress(event, keysArr));
