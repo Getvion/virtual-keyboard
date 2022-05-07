@@ -17,12 +17,41 @@ export const onKeyPress = (event, keysArr) => {
     const ShiftKey = key.classList.contains('ShiftLeft') || key.classList.contains('ShiftRight');
     const AltKey = key.classList.contains('AltLeft') || key.classList.contains('AltRight');
 
-    const eventCodeCheck = key.classList.contains(`${event.code}`);
     const eventKeyDown = event.type === 'keydown';
+    const eventKeyUp = event.type === 'keyup';
+
+    const eventCodeCheck = key.classList.contains(`${event.code}`);
     const eventCodeCaps = event.code === 'CapsLock';
 
+    // ОБРАБОТКА НАЖАТИЯ НА ШИФТ
+    // const eventShift = event.code === 'ShiftLeft' || event.code === 'ShiftRight';
+
+    // let isShiftPress = false;
+    // if (eventKeyDown && eventShift) isShiftPress = true;
+    // if (eventKeyUp && eventShift) isShiftPress = false;
+
+    // if (isShiftPress && !CapsLockKey) {
+    //   Array.from(filteredArr)
+    //     .filter((key) => key.classList.contains('caseDown'))[0]
+    //     .classList.add('hidden');
+
+    //   Array.from(filteredArr)
+    //     .filter((key) => key.classList.contains('caseUp'))[0]
+    //     .classList.remove('hidden');
+    // }
+
+    // if (!isShiftPress && !CapsLockKey) {
+    //   Array.from(filteredArr)
+    //     .filter((key) => key.classList.contains('caseDown'))[0]
+    //     .classList.remove('hidden');
+
+    //   Array.from(filteredArr)
+    //     .filter((key) => key.classList.contains('caseUp'))[0]
+    //     .classList.add('hidden');
+    // }
+
     if (!CapsLockKey && eventCodeCheck && eventKeyDown) key.classList.add('active');
-    if (!CapsLockKey && eventCodeCheck && event.type === 'keyup') key.classList.remove('active');
+    if (!CapsLockKey && eventCodeCheck && eventKeyUp) key.classList.remove('active');
 
     if (CapsLockKey && eventKeyDown && eventCodeCaps) key.classList.toggle('active');
 

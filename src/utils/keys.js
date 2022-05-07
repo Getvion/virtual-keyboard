@@ -4,13 +4,11 @@ const keys = {
       caseDown: '`',
       caseUp: '~',
       caps: '`',
-      shiftCaps: '~',
     },
     ru: {
       caseDown: 'ё',
       caseUp: 'Ё',
       caps: 'Ё',
-      shiftCaps: 'ё',
     },
   },
   Digit1: {
@@ -18,13 +16,11 @@ const keys = {
       caseDown: '1',
       caseUp: '!',
       caps: '1',
-      shiftCaps: '!',
     },
     ru: {
       caseDown: '1',
       caseUp: '!',
       caps: '1',
-      shiftCaps: '!',
     },
   },
   Digit2: {
@@ -32,13 +28,11 @@ const keys = {
       caseDown: '2',
       caseUp: '@',
       caps: '2',
-      shiftCaps: '@',
     },
     ru: {
       caseDown: '2',
       caseUp: '""',
       caps: '2',
-      shiftCaps: '""',
     },
   },
   Digit3: {
@@ -46,13 +40,11 @@ const keys = {
       caseDown: '3',
       caseUp: '#',
       caps: '3',
-      shiftCaps: '#',
     },
     ru: {
       caseDown: '3',
       caseUp: '№',
       caps: '3',
-      shiftCaps: '№',
     },
   },
   Digit4: {
@@ -60,13 +52,11 @@ const keys = {
       caseDown: '4',
       caseUp: '$',
       caps: '4',
-      shiftCaps: '$',
     },
     ru: {
       caseDown: '4',
       caseUp: ';',
       caps: '4',
-      shiftCaps: ';',
     },
   },
   Digit5: {
@@ -74,13 +64,11 @@ const keys = {
       caseDown: '5',
       caseUp: '%',
       caps: '5',
-      shiftCaps: '%',
     },
     ru: {
       caseDown: '5',
       caseUp: '%',
       caps: '5',
-      shiftCaps: '%',
     },
   },
   Digit6: {
@@ -88,13 +76,11 @@ const keys = {
       caseDown: '6',
       caseUp: '^',
       caps: '6',
-      shiftCaps: '^',
     },
     ru: {
       caseDown: '6',
       caseUp: ':',
       caps: '6',
-      shiftCaps: ':',
     },
   },
   Digit7: {
@@ -102,13 +88,11 @@ const keys = {
       caseDown: '7',
       caseUp: '&',
       caps: '7',
-      shiftCaps: '&',
     },
     ru: {
       caseDown: '7',
       caseUp: '?',
       caps: '7',
-      shiftCaps: '?',
     },
   },
   Digit8: {
@@ -116,13 +100,11 @@ const keys = {
       caseDown: '8',
       caseUp: '*',
       caps: '8',
-      shiftCaps: '*',
     },
     ru: {
       caseDown: '8',
       caseUp: '*',
       caps: '8',
-      shiftCaps: '*',
     },
   },
   Digit9: {
@@ -130,13 +112,11 @@ const keys = {
       caseDown: '9',
       caseUp: '(',
       caps: '9',
-      shiftCaps: '(',
     },
     ru: {
       caseDown: '9',
       caseUp: '(',
       caps: '9',
-      shiftCaps: '(',
     },
   },
   Digit0: {
@@ -144,13 +124,11 @@ const keys = {
       caseDown: '0',
       caseUp: ')',
       caps: '0',
-      shiftCaps: ')',
     },
     ru: {
       caseDown: '0',
       caseUp: ')',
       caps: '0',
-      shiftCaps: ')',
     },
   },
   Minus: {
@@ -158,13 +136,11 @@ const keys = {
       caseDown: '-',
       caseUp: '_',
       caps: '-',
-      shiftCaps: '_',
     },
     ru: {
       caseDown: '-',
       caseUp: '_',
       caps: '-',
-      shiftCaps: '_',
     },
   },
   Equal: {
@@ -172,13 +148,11 @@ const keys = {
       caseDown: '=',
       caseUp: '+',
       caps: '=',
-      shiftCaps: '+',
     },
     ru: {
       caseDown: '=',
       caseUp: '+',
       caps: '=',
-      shiftCaps: '+',
     },
   },
   Backspace: {
@@ -186,13 +160,11 @@ const keys = {
       caseDown: 'Backspace',
       caseUp: 'Backspace',
       caps: 'Backspace',
-      shiftCaps: 'Backspace',
     },
     ru: {
       caseDown: 'Backspace',
       caseUp: 'Backspace',
       caps: 'Backspace',
-      shiftCaps: 'Backspace',
     },
   },
   Tab: {
@@ -200,13 +172,11 @@ const keys = {
       caseDown: 'Tab',
       caseUp: 'Tab',
       caps: 'Tab',
-      shiftCaps: 'Tab',
     },
     ru: {
       caseDown: 'Tab',
       caseUp: 'Tab',
       caps: 'Tab',
-      shiftCaps: 'Tab',
     },
   },
   KeyQ: {
@@ -214,13 +184,11 @@ const keys = {
       caseDown: 'q',
       caseUp: 'Q',
       caps: 'Q',
-      shiftCaps: 'q',
     },
     ru: {
       caseDown: 'й',
       caseUp: 'Й',
       caps: 'Й',
-      shiftCaps: 'й',
     },
   },
   KeyW: {
@@ -228,13 +196,11 @@ const keys = {
       caseDown: 'w',
       caseUp: 'W',
       caps: 'W',
-      shiftCaps: 'w',
     },
     ru: {
       caseDown: 'ц',
       caseUp: 'Ц',
       caps: 'Ц',
-      shiftCaps: 'ц',
     },
   },
   KeyE: {
@@ -242,13 +208,11 @@ const keys = {
       caseDown: 'e',
       caseUp: 'E',
       caps: 'E',
-      shiftCaps: 'e',
     },
     ru: {
       caseDown: 'у',
       caseUp: 'У',
       caps: 'У',
-      shiftCaps: 'у',
     },
   },
   KeyR: {
@@ -256,13 +220,11 @@ const keys = {
       caseDown: 'r',
       caseUp: 'R',
       caps: 'R',
-      shiftCaps: 'r',
     },
     ru: {
       caseDown: 'к',
       caseUp: 'К',
       caps: 'К',
-      shiftCaps: 'к',
     },
   },
   KeyT: {
@@ -270,13 +232,11 @@ const keys = {
       caseDown: 't',
       caseUp: 'T',
       caps: 'T',
-      shiftCaps: 't',
     },
     ru: {
       caseDown: 'е',
       caseUp: 'Е',
       caps: 'Е',
-      shiftCaps: 'е',
     },
   },
   KeyY: {
@@ -284,13 +244,11 @@ const keys = {
       caseDown: 'y',
       caseUp: 'Y',
       caps: 'Y',
-      shiftCaps: 'y',
     },
     ru: {
       caseDown: 'н',
       caseUp: 'Н',
       caps: 'Н',
-      shiftCaps: 'н',
     },
   },
   KeyU: {
@@ -298,13 +256,11 @@ const keys = {
       caseDown: 'u',
       caseUp: 'U',
       caps: 'U',
-      shiftCaps: 'u',
     },
     ru: {
       caseDown: 'г',
       caseUp: 'Г',
       caps: 'Г',
-      shiftCaps: 'г',
     },
   },
   KeyI: {
@@ -312,13 +268,11 @@ const keys = {
       caseDown: 'i',
       caseUp: 'I',
       caps: 'I',
-      shiftCaps: 'i',
     },
     ru: {
       caseDown: 'ш',
       caseUp: 'Ш',
       caps: 'Ш',
-      shiftCaps: 'ш',
     },
   },
   KeyO: {
@@ -326,13 +280,11 @@ const keys = {
       caseDown: 'o',
       caseUp: 'O',
       caps: 'O',
-      shiftCaps: 'o',
     },
     ru: {
       caseDown: 'щ',
       caseUp: 'Щ',
       caps: 'Щ',
-      shiftCaps: 'щ',
     },
   },
   KeyP: {
@@ -340,13 +292,11 @@ const keys = {
       caseDown: 'p',
       caseUp: 'P',
       caps: 'P',
-      shiftCaps: 'p',
     },
     ru: {
       caseDown: 'з',
       caseUp: 'З',
       caps: 'З',
-      shiftCaps: 'з',
     },
   },
   BracketLeft: {
@@ -354,13 +304,11 @@ const keys = {
       caseDown: '[',
       caseUp: '{',
       caps: '[',
-      shiftCaps: '{',
     },
     ru: {
       caseDown: 'х',
       caseUp: 'Х',
       caps: 'Х',
-      shiftCaps: 'х',
     },
   },
   BracketRight: {
@@ -368,13 +316,11 @@ const keys = {
       caseDown: ']',
       caseUp: '}',
       caps: ']',
-      shiftCaps: '}',
     },
     ru: {
       caseDown: 'ъ',
       caseUp: 'Ъ',
       caps: 'Ъ',
-      shiftCaps: 'ъ',
     },
   },
   Backslash: {
@@ -396,13 +342,11 @@ const keys = {
       caseDown: 'Del',
       caseUp: 'Del',
       caps: 'Del',
-      shiftCaps: 'Del',
     },
     ru: {
       caseDown: 'Del',
       caseUp: 'Del',
       caps: 'Del',
-      shiftCaps: 'Del',
     },
   },
   CapsLock: {
@@ -410,13 +354,11 @@ const keys = {
       caseDown: 'CapsLock',
       caseUp: 'CapsLock',
       caps: 'CapsLock',
-      shiftCaps: 'CapsLock',
     },
     ru: {
       caseDown: 'CapsLock',
       caseUp: 'CapsLock',
       caps: 'CapsLock',
-      shiftCaps: 'CapsLock',
     },
   },
   KeyA: {
@@ -424,13 +366,11 @@ const keys = {
       caseDown: 'a',
       caseUp: 'A',
       caps: 'A',
-      shiftCaps: 'a',
     },
     ru: {
       caseDown: 'ф',
       caseUp: 'Ф',
       caps: 'Ф',
-      shiftCaps: 'ф',
     },
   },
   KeyS: {
@@ -438,13 +378,11 @@ const keys = {
       caseDown: 's',
       caseUp: 'S',
       caps: 'S',
-      shiftCaps: 's',
     },
     ru: {
       caseDown: 'ы',
       caseUp: 'Ы',
       caps: 'Ы',
-      shiftCaps: 'ы',
     },
   },
   KeyD: {
@@ -452,13 +390,11 @@ const keys = {
       caseDown: 'd',
       caseUp: 'D',
       caps: 'D',
-      shiftCaps: 'd',
     },
     ru: {
       caseDown: 'в',
       caseUp: 'В',
       caps: 'В',
-      shiftCaps: 'в',
     },
   },
   KeyF: {
@@ -466,13 +402,11 @@ const keys = {
       caseDown: 'f',
       caseUp: 'F',
       caps: 'F',
-      shiftCaps: 'f',
     },
     ru: {
       caseDown: 'а',
       caseUp: 'А',
       caps: 'А',
-      shiftCaps: 'а',
     },
   },
   KeyG: {
@@ -480,13 +414,11 @@ const keys = {
       caseDown: 'g',
       caseUp: 'G',
       caps: 'G',
-      shiftCaps: 'g',
     },
     ru: {
       caseDown: 'п',
       caseUp: 'П',
       caps: 'П',
-      shiftCaps: 'п',
     },
   },
   KeyH: {
@@ -494,13 +426,11 @@ const keys = {
       caseDown: 'h',
       caseUp: 'H',
       caps: 'H',
-      shiftCaps: 'h',
     },
     ru: {
       caseDown: 'р',
       caseUp: 'Р',
       caps: 'Р',
-      shiftCaps: 'р',
     },
   },
   KeyJ: {
@@ -508,13 +438,11 @@ const keys = {
       caseDown: 'j',
       caseUp: 'J',
       caps: 'J',
-      shiftCaps: 'j',
     },
     ru: {
       caseDown: 'о',
       caseUp: 'О',
       caps: 'О',
-      shiftCaps: 'о',
     },
   },
   KeyK: {
@@ -522,13 +450,11 @@ const keys = {
       caseDown: 'k',
       caseUp: 'K',
       caps: 'K',
-      shiftCaps: 'k',
     },
     ru: {
       caseDown: 'л',
       caseUp: 'Л',
       caps: 'Л',
-      shiftCaps: 'л',
     },
   },
   KeyL: {
@@ -536,13 +462,11 @@ const keys = {
       caseDown: 'l',
       caseUp: 'L',
       caps: 'L',
-      shiftCaps: 'l',
     },
     ru: {
       caseDown: 'д',
       caseUp: 'Д',
       caps: 'Д',
-      shiftCaps: 'д',
     },
   },
   Semicolon: {
@@ -550,13 +474,11 @@ const keys = {
       caseDown: ';',
       caseUp: ':',
       caps: ';',
-      shiftCaps: ':',
     },
     ru: {
       caseDown: 'ж',
       caseUp: 'Ж',
       caps: 'Ж',
-      shiftCaps: 'ж',
     },
   },
   Quote: {
@@ -564,13 +486,11 @@ const keys = {
       caseDown: "'",
       caseUp: '"',
       caps: "'",
-      shiftCaps: '"',
     },
     ru: {
       caseDown: 'э',
       caseUp: 'Э',
       caps: 'Э',
-      shiftCaps: 'э',
     },
   },
   Enter: {
@@ -578,13 +498,11 @@ const keys = {
       caseDown: 'Enter',
       caseUp: 'Enter',
       caps: 'Enter',
-      shiftCaps: 'Enter',
     },
     ru: {
       caseDown: 'Enter',
       caseUp: 'Enter',
       caps: 'Enter',
-      shiftCaps: 'Enter',
     },
   },
   ShiftLeft: {
@@ -592,13 +510,11 @@ const keys = {
       caseDown: 'Shift',
       caseUp: 'Shift',
       caps: 'Shift',
-      shiftCaps: 'Shift',
     },
     ru: {
       caseDown: 'Shift',
       caseUp: 'Shift',
       caps: 'Shift',
-      shiftCaps: 'Shift',
     },
   },
   KeyZ: {
@@ -606,13 +522,11 @@ const keys = {
       caseDown: 'z',
       caseUp: 'Z',
       caps: 'Z',
-      shiftCaps: 'z',
     },
     ru: {
       caseDown: 'я',
       caseUp: 'Я',
       caps: 'Я',
-      shiftCaps: 'Я',
     },
   },
   KeyX: {
@@ -620,13 +534,11 @@ const keys = {
       caseDown: 'x',
       caseUp: 'X',
       caps: 'X',
-      shiftCaps: 'x',
     },
     ru: {
       caseDown: 'ч',
       caseUp: 'Ч',
       caps: 'Ч',
-      shiftCaps: 'ч',
     },
   },
   KeyC: {
@@ -634,13 +546,11 @@ const keys = {
       caseDown: 'c',
       caseUp: 'C',
       caps: 'C',
-      shiftCaps: 'c',
     },
     ru: {
       caseDown: 'с',
       caseUp: 'С',
       caps: 'С',
-      shiftCaps: 'с',
     },
   },
   KeyV: {
@@ -648,13 +558,11 @@ const keys = {
       caseDown: 'v',
       caseUp: 'V',
       caps: 'V',
-      shiftCaps: 'v',
     },
     ru: {
       caseDown: 'м',
       caseUp: 'М',
       caps: 'М',
-      shiftCaps: 'м',
     },
   },
   KeyB: {
@@ -662,13 +570,11 @@ const keys = {
       caseDown: 'b',
       caseUp: 'B',
       caps: 'B',
-      shiftCaps: 'b',
     },
     ru: {
       caseDown: 'и',
       caseUp: 'И',
       caps: 'И',
-      shiftCaps: 'и',
     },
   },
   KeyN: {
@@ -676,13 +582,11 @@ const keys = {
       caseDown: 'n',
       caseUp: 'N',
       caps: 'N',
-      shiftCaps: 'n',
     },
     ru: {
       caseDown: 'т',
       caseUp: 'Т',
       caps: 'Т',
-      shiftCaps: 'т',
     },
   },
   KeyM: {
@@ -690,13 +594,11 @@ const keys = {
       caseDown: 'm',
       caseUp: 'M',
       caps: 'M',
-      shiftCaps: 'm',
     },
     ru: {
       caseDown: 'о',
       caseUp: 'О',
       caps: 'О',
-      shiftCaps: 'о',
     },
   },
   Comma: {
@@ -704,13 +606,11 @@ const keys = {
       caseDown: ',',
       caseUp: '<',
       caps: ',',
-      shiftCaps: '<',
     },
     ru: {
       caseDown: 'б',
       caseUp: 'Б',
       caps: 'Б',
-      shiftCaps: 'б',
     },
   },
   Period: {
@@ -718,13 +618,11 @@ const keys = {
       caseDown: '.',
       caseUp: '>',
       caps: '.',
-      shiftCaps: '>',
     },
     ru: {
       caseDown: 'ю',
       caseUp: 'Ю',
       caps: 'Ю',
-      shiftCaps: 'ю',
     },
   },
   Slash: {
@@ -732,13 +630,11 @@ const keys = {
       caseDown: '/',
       caseUp: '?',
       caps: '/',
-      shiftCaps: '?',
     },
     ru: {
       caseDown: '.',
       caseUp: ',',
       caps: '.',
-      shiftCaps: ',',
     },
   },
   ArrowUp: {
@@ -746,13 +642,11 @@ const keys = {
       caseDown: '▲',
       caseUp: '▲',
       caps: '▲',
-      shiftCaps: '▲',
     },
     ru: {
       caseDown: '▲',
       caseUp: '▲',
       caps: '▲',
-      shiftCaps: '▲',
     },
   },
   ShiftRight: {
@@ -760,13 +654,11 @@ const keys = {
       caseDown: 'Shift',
       caseUp: 'Shift',
       caps: 'Shift',
-      shiftCaps: 'Shift',
     },
     ru: {
       caseDown: 'Shift',
       caseUp: 'Shift',
       caps: 'Shift',
-      shiftCaps: 'Shift',
     },
   },
   ControlLeft: {
@@ -774,13 +666,11 @@ const keys = {
       caseDown: 'Ctrl',
       caseUp: 'Ctrl',
       caps: 'Ctrl',
-      shiftCaps: 'Ctrl',
     },
     ru: {
       caseDown: 'Ctrl',
       caseUp: 'Ctrl',
       caps: 'Ctrl',
-      shiftCaps: 'Ctrl',
     },
   },
   MetaLeft: {
@@ -788,13 +678,11 @@ const keys = {
       caseDown: 'Win',
       caseUp: 'Win',
       caps: 'Win',
-      shiftCaps: 'Win',
     },
     ru: {
       caseDown: 'Win',
       caseUp: 'Win',
       caps: 'Win',
-      shiftCaps: 'Win',
     },
   },
   AltLeft: {
@@ -802,13 +690,11 @@ const keys = {
       caseDown: 'Alt',
       caseUp: 'Alt',
       caps: 'Alt',
-      shiftCaps: 'Alt',
     },
     ru: {
       caseDown: 'Alt',
       caseUp: 'Alt',
       caps: 'Alt',
-      shiftCaps: 'Alt',
     },
   },
   Space: {
@@ -816,13 +702,11 @@ const keys = {
       caseDown: ' ',
       caseUp: ' ',
       caps: ' ',
-      shiftCaps: ' ',
     },
     ru: {
       caseDown: ' ',
       caseUp: ' ',
       caps: ' ',
-      shiftCaps: ' ',
     },
   },
   AltRight: {
@@ -830,13 +714,11 @@ const keys = {
       caseDown: 'Alt',
       caseUp: 'Alt',
       caps: 'Alt',
-      shiftCaps: 'Alt',
     },
     ru: {
       caseDown: 'Alt',
       caseUp: 'Alt',
       caps: 'Alt',
-      shiftCaps: 'Alt',
     },
   },
   ArrowLeft: {
@@ -844,13 +726,11 @@ const keys = {
       caseDown: '◄',
       caseUp: '◄',
       caps: '◄',
-      shiftCaps: '◄',
     },
     ru: {
       caseDown: '◄',
       caseUp: '◄',
       caps: '◄',
-      shiftCaps: '◄',
     },
   },
   ArrowDown: {
@@ -858,13 +738,11 @@ const keys = {
       caseDown: '▼',
       caseUp: '▼',
       caps: '▼',
-      shiftCaps: '▼',
     },
     ru: {
       caseDown: '▼',
       caseUp: '▼',
       caps: '▼',
-      shiftCaps: '▼',
     },
   },
   ArrowRight: {
@@ -872,13 +750,11 @@ const keys = {
       caseDown: '►',
       caseUp: '►',
       caps: '►',
-      shiftCaps: '►',
     },
     ru: {
       caseDown: '►',
       caseUp: '►',
       caps: '►',
-      shiftCaps: '►',
     },
   },
   ControlRight: {
@@ -886,13 +762,11 @@ const keys = {
       caseDown: 'Ctrl',
       caseUp: 'Ctrl',
       caps: 'Ctrl',
-      shiftCaps: 'Ctrl',
     },
     ru: {
       caseDown: 'Ctrl',
       caseUp: 'Ctrl',
       caps: 'Ctrl',
-      shiftCaps: 'Ctrl',
     },
   },
 };
