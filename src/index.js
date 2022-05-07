@@ -1,4 +1,5 @@
 import { generateKeys } from './js/generateKeys';
+import { onKeyClick } from './js/onKeyClick';
 
 import './styles/style.scss';
 
@@ -19,6 +20,9 @@ const fitrstLoad = () => {
   keyboard.classList.add('keyboard');
 
   for (let i = 0; i < keysArr.length; i += 1) {
+    keysArr[i].addEventListener('mousedown', (event) => onKeyClick(event, keysArr));
+    keysArr[i].addEventListener('mouseup', (event) => onKeyClick(event, keysArr));
+
     if (i < 14) row1.append(keysArr[i]);
     if (i >= 14 && i < 29) row2.append(keysArr[i]);
     if (i >= 29 && i < 42) row3.append(keysArr[i]);
@@ -34,3 +38,4 @@ const fitrstLoad = () => {
 };
 
 window.addEventListener('DOMContentLoaded', fitrstLoad);
+window.addEventListener('keydown', (event) => onKeyPress(event, keysArr));
