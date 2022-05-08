@@ -13,7 +13,7 @@ body {
   margin: 0;
   padding: 0;
 }
-.app {
+body {
   max-width: 1000px;
   min-height: 100vh;
   margin: 0 auto;
@@ -47,47 +47,38 @@ body {
 .keyboard {
   width: 100%;
   margin-top: 20px;
-
-  .row {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
+}
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .key {
+  cursor: pointer;
   width: 50px;
   height: 50px;
-  margin: 5px;
-  background-color: #333;
-  color: #fff;
+  background: black;
   border-radius: 5px;
+  margin: 2px;
+  color: white;
+  font-size: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 0.1s ease-in-out;
-  cursor: pointer;
   border: 1px solid #333;
+  margin: 5px;
 
-  &:active,
-  &.active {
-    color: #333;
-    background-color: #fff;
+  &:hover {
+    background-color: #303030;
   }
 }
 
-.Backspace,
-.CapsLock,
-.Enter,
-.ShiftLeft,
-.ShiftRight {
-  width: 110px;
-}
-
-.Space {
-  width: 410px;
-}
-
-.hidden {
+.hide {
   display: none;
+}
+
+.show {
+  pointer-events: none;
 }

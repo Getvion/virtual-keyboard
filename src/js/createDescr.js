@@ -1,4 +1,6 @@
-export const createDescr = (app) => {
+export const createDescr = () => {
+  const body = document.body;
+
   const container = document.createElement('div');
   container.classList.add('container');
 
@@ -11,5 +13,5 @@ export const createDescr = (app) => {
   descr.textContent = 'Разработка велась на Windows, для смены языка нажмите Shift + Alt';
 
   container.append(title, descr);
-  app.append(container);
+  body.append(container);
 };
