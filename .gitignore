@@ -3,7 +3,4 @@
 /.pnp
 .pnp.js
 
-# production
-/dist
-
 npm-debug.log*
